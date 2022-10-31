@@ -11,20 +11,15 @@ import { RoughnessMipmapper } from './RoughnessMipmapper.js';
 var container;
 var camera, scene, renderer, renderer1, controls;
 
-var objects = [];
 
-var changePosition = 0.1;
-
-var mouse;
-var raycaster;
 
 
 
 
 
   var loader = new GLTFLoader();
-  raycaster = new THREE.Raycaster();
-  mouse = new THREE.Vector2();
+ 
+ 
   container = document.createElement("div");
   document.body.appendChild(container);
 
@@ -83,12 +78,10 @@ var raycaster;
     return response.json();
   }).then(function (data) {
 
-   // sndan(data.topic_id);
   console.log(data.data[1].positionX)
     for (let numberrose1 = 0; numberrose1 < data.data.length; numberrose1++) {
       rose1(data.data[numberrose1].name,data.data[numberrose1].positionX,data.data[numberrose1].positinY,data.data[numberrose1].positinZ,data.data[numberrose1].rotationX,data.data[numberrose1].rotationY,data.data[numberrose1].rotationZ);
 
-//rose1(data.data[numberrose1].name,data.data[numberrose1].positionX,data.data[numberrose1].positionY,data.data[numberrose1].positionZ,data.data[numberrose1].rotationX,data.data[numberrose1].rotationY,data.data[numberrose1].rotationZ);
     }
 
 
@@ -119,16 +112,13 @@ var tomixerloop=0;
         if (child.isMesh) {
 
         
-          console.log(child.name)
 
           child.position.x=pox
 
 
-if(poy<-9){
-  poy==-1
-}
 
-            child.position.y=(poy<-9 ? -1 : -1) 
+
+            child.position.y=poy 
             child.position.z=poz
           
             child.rotation.z= roz
@@ -282,39 +272,14 @@ water()
 
   window.addEventListener("resize", onWindowResize, false);
 
-  let dragControls = new DragControls(objects, camera, renderer.domElement);
 
-     console.log("DOWN");
+
+  
  
  
 
-  dragControls.addEventListener("dragstart", function(event) {
-    
-//console.log(event.object.name)
-//console.log(event.object.position.x)
-if(event.object.name=="base"){
-  dragControls.enabled=true
-  controls.enabled = false;
-}else{
-  dragControls.enabled=false
-}
-
-  });
-  dragControls.addEventListener("dragend", function() {
-    controls.enabled = true;
-  });
-
-  dragControls.addEventListener("drag", function(event) {
-
-    //console.log(event.object.position.x)
-    document.getElementById("xpo").value=event.object.position.x;
-    document.getElementById("ypo").value=event.object.position.y;
-    document.getElementById("zpo").value=event.object.position.z;
-
-    
 
 
-  })
 
 
 
@@ -363,13 +328,7 @@ animate();
 
 function animate() {
   requestAnimationFrame(animate);
-  /*
-  if(mixer){
 
-    mixer.update(clock5.getDelta());
-    
-    }
-    */
   update();
   render();
   
