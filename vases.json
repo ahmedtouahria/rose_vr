@@ -1,20 +1,148 @@
 {"data":
-[{"name" : "rose1curv1","positionX": 7.629041317435334 ,"positinY": -1.588274963399172 ,"positinZ": 0.923030734552572 ,"rotationX": 0 ,"rotationY": 0.28455284553 ,"rotationZ": 0}
-,{"name" : "rose1curv1", "positionX": 4.30459923079593 ,"positinY": -1.661142608636467 ,"positinZ":5.348505730084208 ,"rotationX": 0 ,"rotationY":0.52845528455 ,"rotationZ": 0}
-,{"name" : "rose1curv1", "positionX": 5.02909651124348 ,"positinY": -1.20325031903083 ,"positinZ": 3.7057564632241795 ,"rotationX": 0 ,"rotationY": 5.08130081301 ,"rotationZ": 0.026422764227600003}
-,{"name" : "rose1curv1", "positionX": 0.99224826767825 ,"positinY": -1.73464301467186 ,"positinZ": 7.839340664114204 ,"rotationX": 0 ,"rotationY": 4.0243902439 ,"rotationZ":0.015040650406500001}
-,{"name" : "rose1curv1", "positionX": 0.22764414810933 ,"positinY": -1.434460251120825 ,"positinZ":5.318652374880713 ,"rotationX":0.0109756097561 ,"rotationY":5.81300813008 ,"rotationZ": 0.14837398373979999}
-,{"name" : "rose1curv1", "positionX": -0.9987694569355128 ,"positinY": -1.556500501741823 ,"positinZ": -11.22562461990104 ,"rotationX": 0 ,"rotationY": 11.34146341463 ,"rotationZ": 0.0109756097561}
-,{"name" : "rose1curv1", "positionX": -10.245156007305166 ,"positinY": -1.900497580518163 ,"positinZ": 0.2374459104325446 ,"rotationX": 0 ,"rotationY": 9.79674796748 ,"rotationZ": 0.0556910569106}
-,{"name" : "rose1curv1", "positionX": 7.985142835490079 ,"positinY": -1.074369650864753 ,"positinZ": -14.839328562261414 ,"rotationX": 0 ,"rotationY": 9.55284552846 ,"rotationZ": 0.0378048780488}
-,{"name" : "rose1curv1", "positionX": 11.56480060218708 ,"positinY": -1.8004719620958 ,"positinZ": -20.612246862487012 ,"rotationX": 0 ,"rotationY": 8.82113821138 ,"rotationZ": 0.0353658536585}
-,{"name" : "rose1curv1", "positionX": 8.358534916470806 ,"positinY": -1.157723244995537 ,"positinZ": 2.2808034291322574 ,"rotationX": 0 ,"rotationY": -1.42276422764 ,"rotationZ": -0.0020325203252}
-,{"name" : "rose1curv1", "positionX": 6.707986124762913 ,"positinY": -1.386594011440835 ,"positinZ": 0.627436346521443 ,"rotationX": 0 ,"rotationY": 6.05691056911 ,"rotationZ": -0.0052845528455}
-,{"name" : "rose1curv1", "positionX": 8.050444306844717 ,"positinY": -1.547538615802011 ,"positinZ": 1.8973834275673482 ,"rotationX": 0 ,"rotationY": 0.52845528455 ,"rotationZ": -0.0288617886179}
-,{"name" : "rose1curv1", "positionX": 21.618288926164063 ,"positinY": -1.050922237027635 ,"positinZ": -10.418262461215377 ,"rotationX": 0 ,"rotationY": 1.17886178862 ,"rotationZ": 0.09308943089430001}
-,{"name" : "rose1curv1", "positionX": 14.489512027515246 ,"positinY": -1.83007508982783 ,"positinZ": -12.488162319907516 ,"rotationX": 0 ,"rotationY": 1.74796747967 ,"rotationZ": 0.0109756097561}
-,{"name" : "rose1curv1", "positionX": -0.088744670315279 ,"positinY": -1.310921229154474 ,"positinZ": 8.459238211468346 ,"rotationX": 0 ,"rotationY": 3.53658536585 ,"rotationZ": 0.0434959349593}
-,{"name" : "rose1curv1", "positionX": 13.647528935244985 ,"positinY": -1.264872855804299 ,"positinZ": -0.6252256669036136 ,"rotationX": 0 ,"rotationY": 2.80487804878 ,"rotationZ": -0.0410569105691}
-,{"name" : "rose1curv1", "positionX": 10.406085376102965 ,"positinY": -1.4847798318889431 ,"positinZ": -11.242113673166386 ,"rotationX": 0 ,"rotationY": 1.34146341463 ,"rotationZ": 0.0012195121951}
-,{"name" : "rose1curv1", "positionX": 17.352350955442333 ,"positinY": -1.1358176183464962 ,"positinZ": -15.164179127672647 ,"rotationX": 0 ,"rotationY": 0 ,"rotationZ": 0}
-]}
+[
+    {
+        "name": "rose1curv1",
+        "positionX": 11.543287692975198,
+        "positinY": -1.8926206646485753,
+        "positinZ": 16.576657884657116,
+        "rotationX": 0,
+        "rotationY": "-0.93495934959",
+        "rotationZ": 0
+    },
+    {
+        "name": "rose1curv1",
+        "positionX": 12.198061917512721,
+        "positinY": 0.3705782717538284,
+        "positinZ": 7.993197702386219,
+        "rotationX": 0,
+        "rotationY": "0.20325203252",
+        "rotationZ": 0
+    },
+    {
+        "name": "rose1curv1",
+        "positionX": 16.94922803634229,
+        "positinY": -4.993319755302352,
+        "positinZ": 11.516877955801995,
+        "rotationX": 0,
+        "rotationY": "1.26016260163",
+        "rotationZ": 0
+    },
+    {
+        "name": "rose1curv1",
+        "positionX": -0.2715781989165862,
+        "positinY": -4.257952533743747,
+        "positinZ": 3.5702937934746615,
+        "rotationX": 0,
+        "rotationY": "5",
+        "rotationZ": 0
+    },
+    {
+        "name": "rose1curv1",
+        "positionX": -1.5172652497542374,
+        "positinY": -4.331967423308754,
+        "positinZ": -2.6137468294041373,
+        "rotationX": 0,
+        "rotationY": "4.10569105691",
+        "rotationZ": 0
+    },
+    {
+        "name": "rose1curv1",
+        "positionX": 8.878299016677659,
+        "positinY": -0.18886324045695346,
+        "positinZ": -13.521810636620726,
+        "rotationX": 0,
+        "rotationY": "3.53658536585",
+        "rotationZ": 0
+    },
+    {
+        "name": "rose1curv1",
+        "positionX": 19.30898074175855,
+        "positinY": 0.20842007842981047,
+        "positinZ": -14.247815102644998,
+        "rotationX": 0,
+        "rotationY": "2.80487804878",
+        "rotationZ": 0
+    },
+    {
+        "name": "rose1curv1",
+        "positionX": 23.219053306319935,
+        "positinY": -0.987436515118489,
+        "positinZ": -17.501765150179168,
+        "rotationX": 0,
+        "rotationY": "1.74796747967",
+        "rotationZ": 0
+    },
+    {
+        "name": "rose1curv1",
+        "positionX": 29.13412584287235,
+        "positinY": -1.6739846590803182,
+        "positinZ": -10.526716729670607,
+        "rotationX": 0,
+        "rotationY": "1.26016260163",
+        "rotationZ": 0
+    },
+    {
+        "name": "rose1curv1",
+        "positionX": 5.7886124179669025,
+        "positinY": 20.58919955687432,
+        "positinZ": -6.540493594220678,
+        "rotationX": 0,
+        "rotationY": 0,
+        "rotationZ": 0
+    },
+    {
+        "name": "rose1curv1",
+        "positionX": 4.675077792571841,
+        "positinY": 20.10194773071194,
+        "positinZ": 15.715855309777893,
+        "rotationX": 0,
+        "rotationY": "-2.31707317073",
+        "rotationZ": 0
+    },
+    {
+        "name": "rose1curv1",
+        "positionX": 15.362683058314449,
+        "positinY": 16.28744470966754,
+        "positinZ": -0.469025815991003,
+        "rotationX": 0,
+        "rotationY": "-5.65040650407",
+        "rotationZ": 0
+    },
+    {
+        "name": "rose1curv1",
+        "positionX": 18.56330873887072,
+        "positinY": 17.689608444660735,
+        "positinZ": -9.209564439847583,
+        "rotationX": 0,
+        "rotationY": "-11.34146341463",
+        "rotationZ": -0.0256097560976
+    },
+    {
+        "name": "rose1curv1",
+        "positionX": 17.041338795408343,
+        "positinY": 14.045397423663132,
+        "positinZ": -8.566376220139517,
+        "rotationX": 0.030487804878000003,
+        "rotationY": "-10.20325203252",
+        "rotationZ": -0.0256097560976
+    },
+    {
+        "name": "rose1curv1",
+        "positionX": 11.397282650322957,
+        "positinY": 19.46731312671102,
+        "positinZ": -11.099049174959571,
+        "rotationX": 0,
+        "rotationY": "-9.30894308943",
+        "rotationZ": 0
+    },
+    {
+        "name": "rose1curv1",
+        "positionX": -3.6072690039086552,
+        "positinY": 16.20353583045633,
+        "positinZ": -3.5063012862216674,
+        "rotationX": 0,
+        "rotationY": "-8.9837398374",
+        "rotationZ": 0
+    }
+]
+}

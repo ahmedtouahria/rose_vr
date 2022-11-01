@@ -83,17 +83,6 @@ var camera, scene, renderer, renderer1, controls;
       rose1(data.data[numberrose1].name,data.data[numberrose1].positionX,data.data[numberrose1].positinY,data.data[numberrose1].positinZ,data.data[numberrose1].rotationX,data.data[numberrose1].rotationY,data.data[numberrose1].rotationZ);
 
     }
-
-
-
- 
-
-
-
-
-
-
-
   }).catch(function (err) {
     console.warn('Something went wrong.', err);
   });
