@@ -4,17 +4,10 @@ import { GLTFLoader } from "./GLTFLoader.js";
 import { RGBELoader } from './RGBELoader.js';
 import { RoughnessMipmapper } from './RoughnessMipmapper.js';
 var container;
-
 var camera, scene, renderer, renderer1, controls;
-
-
 var numberrose1=0
-
 var myTimeout;
-
-  var loader = new GLTFLoader();
- 
- 
+var loader = new GLTFLoader();
 
 var camera, scene, renderer;
 var loader = new GLTFLoader(); 
@@ -54,23 +47,17 @@ var loader = new GLTFLoader();
     return response.json();
   }).then(function (data) {
 
-
     // for (let numberrose1 = 0; numberrose1 < data.data.length; numberrose1++) {
     //   rose1(data.data[numberrose1].name,data.data[numberrose1].positionX,data.data[numberrose1].positinY,data.data[numberrose1].positinZ,data.data[numberrose1].rotationX,data.data[numberrose1].rotationY,data.data[numberrose1].rotationZ);
 
     // }
-  
     function icrenum(num){
-      
-     
-
+    
      if(num>=data.data.length){
       
      } 
     
-    
      }
-
       myTimeout = setInterval(function (){  rose1(data.data[numberrose1].name,data.data[numberrose1].positionX,data.data[numberrose1].positinY,data.data[numberrose1].positinZ,data.data[numberrose1].rotationX,data.data[numberrose1].rotationY,data.data[numberrose1].rotationZ,data.data.length) ;icrenum(numberrose1++)}, 100);
 
 
@@ -82,18 +69,9 @@ var loader = new GLTFLoader();
     console.warn('Something went wrong.', err);
   });
 
-
-
-<<<<<<< HEAD
-
-
-
-
 var tomixerloop=0;
   function rose1(nam,pox,poy,poz,rox,roy,roz,lngthdata) {
     loader.load('models/rose1/' + nam + '.glb', function (gltff) {
-
-
      
 //var tomixerloop=0;
   function rose1(nam,pox,poy,poz,rox,roy,roz) {
@@ -111,7 +89,6 @@ var tomixerloop=0;
             if(numberrose1==lngthdata){
               clearInterval(myTimeout)
             }
-        
      
         }
       });
@@ -152,9 +129,8 @@ water()
       function water() {
     loader.load('models/water.glb', function (gltffsnd) {
 
-
       //face1.glb
-      
+     
       gltffsnd.scene.children[0].traverse(function (childsndan) {
         if (childsndan.isMesh) {
           childsndan.material.metalness = 0.9;
@@ -226,37 +202,26 @@ water()
 
  const roughnessMipmapper = new RoughnessMipmapper(renderer);
 
-
-
-
-
 function onWindowResize() {
   camera.aspect = window.innerWidth / window.innerHeight;
   camera.updateProjectionMatrix();
 
   renderer.setSize(window.innerWidth, window.innerHeight);
- 
+
 }
 var clock5=new THREE.Clock();
-
 
 function update() {
   camera.updateProjectionMatrix();
 }
 //
 animate();
-
 function animate() {
   requestAnimationFrame(animate);
-
   update();
   render();
   
 }
-
 function render() {
-   
-  renderer.render(scene, camera);
-
- 
+renderer.render(scene, camera);
 }
