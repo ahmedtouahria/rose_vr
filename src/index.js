@@ -12,10 +12,9 @@ var container;
 var camera, scene, renderer, renderer1, controls;
 
 
+var numberrose1=0
 
-
-
-
+var myTimeout;
 
   var loader = new GLTFLoader();
  
@@ -78,17 +77,30 @@ var camera, scene, renderer, renderer1, controls;
     return response.json();
   }).then(function (data) {
 
-  console.log(data.data[1].positionX)
-    for (let numberrose1 = 0; numberrose1 < data.data.length; numberrose1++) {
-      rose1(data.data[numberrose1].name,data.data[numberrose1].positionX,data.data[numberrose1].positinY,data.data[numberrose1].positinZ,data.data[numberrose1].rotationX,data.data[numberrose1].rotationY,data.data[numberrose1].rotationZ);
 
-    }
+    // for (let numberrose1 = 0; numberrose1 < data.data.length; numberrose1++) {
+    //   rose1(data.data[numberrose1].name,data.data[numberrose1].positionX,data.data[numberrose1].positinY,data.data[numberrose1].positinZ,data.data[numberrose1].rotationX,data.data[numberrose1].rotationY,data.data[numberrose1].rotationZ);
+
+    // }
+  
+    function icrenum(num){
+      
+     
+
+     if(num>=data.data.length){
+      
+     } 
+    
+    
+     }
+
+      myTimeout = setInterval(function (){  rose1(data.data[numberrose1].name,data.data[numberrose1].positionX,data.data[numberrose1].positinY,data.data[numberrose1].positinZ,data.data[numberrose1].rotationX,data.data[numberrose1].rotationY,data.data[numberrose1].rotationZ,data.data.length) ;icrenum(numberrose1++)}, 100);
 
 
 
- 
 
 
+console.log("lkjhgf")
 
 
 
@@ -100,8 +112,12 @@ var camera, scene, renderer, renderer1, controls;
 
 
 
+
+
+
+
 var tomixerloop=0;
-  function rose1(nam,pox,poy,poz,rox,roy,roz) {
+  function rose1(nam,pox,poy,poz,rox,roy,roz,lngthdata) {
     loader.load('models/rose1/' + nam + '.glb', function (gltff) {
 
 
@@ -128,7 +144,11 @@ var tomixerloop=0;
       
            
             scene.add(child);
-
+            if(numberrose1==lngthdata){
+              clearInterval(myTimeout)
+            }
+        
+        console.log(numberrose1)
 
 
 
@@ -187,7 +207,7 @@ var tomixerloop=0;
           childsndan.material.opacity = 0.5;
           scene.add(childsndan);
 
-
+      
         }
 
       });
@@ -205,7 +225,7 @@ var tomixerloop=0;
 
 
 
-water()
+//water()
   
  
 
