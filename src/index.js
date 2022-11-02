@@ -54,7 +54,7 @@ var loader = new GLTFLoader();
 
 //var tomixerloop=0;
   function rose1(nam,pox,poy,poz,rox,roy,roz) {
-    loader.load('models/rose1/' + nam + '.glb', function (gltff) {
+    loader.load('models/rose1/curve/' + nam + '.glb', function (gltff) {
     
       gltff.scene.children[0].traverse(function (child) {
         if (child.isMesh) {
