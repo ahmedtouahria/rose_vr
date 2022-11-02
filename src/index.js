@@ -79,14 +79,13 @@ var loader = new GLTFLoader();
 
 
 
-console.log("lkjhgf")
 
 
 
 
 
 =======
-  console.log(data.data[1].positionX)
+
     for (let numberrose1 = 0; numberrose1 < data.data.length; numberrose1++) {
       rose1(data.data[numberrose1].name,data.data[numberrose1].positionX,data.data[numberrose1].positinY,data.data[numberrose1].positinZ,data.data[numberrose1].rotationX,data.data[numberrose1].rotationY,data.data[numberrose1].rotationZ);
 
@@ -129,7 +128,7 @@ var tomixerloop=0;
               clearInterval(myTimeout)
             }
         
-        console.log(numberrose1)
+       
 
 
 
