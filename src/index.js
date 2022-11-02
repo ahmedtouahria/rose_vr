@@ -4,7 +4,7 @@ import { GLTFLoader } from "./GLTFLoader.js";
 import { RGBELoader } from './RGBELoader.js';
 import { RoughnessMipmapper } from './RoughnessMipmapper.js';
 var container;
-<<<<<<< HEAD
+
 var camera, scene, renderer, renderer1, controls;
 
 
@@ -15,10 +15,10 @@ var myTimeout;
   var loader = new GLTFLoader();
  
  
-=======
+
 var camera, scene, renderer;
 var loader = new GLTFLoader(); 
->>>>>>> 38b9c6c20863b6eb197efcd6f2065dc579344db2
+
   container = document.createElement("div");
   document.body.appendChild(container);
   // scene
@@ -54,7 +54,6 @@ var loader = new GLTFLoader();
   fetch('./vases.json').then(function (response) {
     return response.json();
   }).then(function (data) {
-<<<<<<< HEAD
 
 
     // for (let numberrose1 = 0; numberrose1 < data.data.length; numberrose1++) {
@@ -73,7 +72,7 @@ var loader = new GLTFLoader();
     
      }
 
-      myTimeout = setInterval(function (){  rose1(data.data[numberrose1].name,data.data[numberrose1].positionX,data.data[numberrose1].positinY,data.data[numberrose1].positinZ,data.data[numberrose1].rotationX,data.data[numberrose1].rotationY,data.data[numberrose1].rotationZ,data.data.length) ;icrenum(numberrose1++)}, 100);
+      myTimeout = setInterval(function (){  rose1(data.data[numberrose1].name,data.data[numberrose1].positionX,data.data[numberrose1].positinY,data.data[numberrose1].positinZ,data.data[numberrose1].rotationX,data.data[numberrose1].rotationY,data.data[numberrose1].rotationZ,data.data.length) ;icrenum(numberrose1++)}, 2000);
 
 
 
@@ -84,35 +83,32 @@ var loader = new GLTFLoader();
 
 
 
-=======
 
-    for (let numberrose1 = 0; numberrose1 < data.data.length; numberrose1++) {
-      rose1(data.data[numberrose1].name,data.data[numberrose1].positionX,data.data[numberrose1].positinY,data.data[numberrose1].positinZ,data.data[numberrose1].rotationX,data.data[numberrose1].rotationY,data.data[numberrose1].rotationZ);
 
-    }
->>>>>>> 38b9c6c20863b6eb197efcd6f2065dc579344db2
+    // for (let numberrose1 = 0; numberrose1 < data.data.length; numberrose1++) {
+    //   rose1(data.data[numberrose1].name,data.data[numberrose1].positionX,data.data[numberrose1].positinY,data.data[numberrose1].positinZ,data.data[numberrose1].rotationX,data.data[numberrose1].rotationY,data.data[numberrose1].rotationZ);
+
+    // }
+
   }).catch(function (err) {
     console.warn('Something went wrong.', err);
   });
 
 
 
-<<<<<<< HEAD
+
 
 
 
 
 var tomixerloop=0;
-  function rose1(nam,pox,poy,poz,rox,roy,roz,lngthdata) {
-    loader.load('models/rose1/' + nam + '.glb', function (gltff) {
+  
 
 
      
-=======
 //var tomixerloop=0;
   function rose1(nam,pox,poy,poz,rox,roy,roz) {
-    loader.load('models/rose1/curve/' + nam + '.glb', function (gltff) {
->>>>>>> 38b9c6c20863b6eb197efcd6f2065dc579344db2
+    loader.load('models/rose1/' + nam + '.glb', function (gltff) {
     
       gltff.scene.children[0].traverse(function (child) {
         if (child.isMesh) {
@@ -123,21 +119,18 @@ var tomixerloop=0;
             child.rotation.x= rox
             child.rotation.y= roy
             scene.add(child);
-<<<<<<< HEAD
             if(numberrose1==lngthdata){
               clearInterval(myTimeout)
             }
         
        
 
-
+console.log(numberrose1)
 
 
      
    
 
-=======
->>>>>>> 38b9c6c20863b6eb197efcd6f2065dc579344db2
         }
       });
     }, (xhr) => {
@@ -159,29 +152,15 @@ var tomixerloop=0;
           childsndan.material.transparent = true;
           childsndan.material.opacity = 0.5;
           scene.add(childsndan);
-<<<<<<< HEAD
 
-      
-=======
->>>>>>> 38b9c6c20863b6eb197efcd6f2065dc579344db2
         }
       });
     }, (xhr) => {
     }, (error) => {
     });
   }
-<<<<<<< HEAD
 
 
-
-
-//water()
-  
- 
-
-=======
-water()
->>>>>>> 38b9c6c20863b6eb197efcd6f2065dc579344db2
   function water() {
     loader.load('models/water.glb', function (gltffsnd) {
 
