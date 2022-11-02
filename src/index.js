@@ -72,7 +72,7 @@ var loader = new GLTFLoader();
     
      }
 
-      myTimeout = setInterval(function (){  rose1(data.data[numberrose1].name,data.data[numberrose1].positionX,data.data[numberrose1].positinY,data.data[numberrose1].positinZ,data.data[numberrose1].rotationX,data.data[numberrose1].rotationY,data.data[numberrose1].rotationZ,data.data.length) ;icrenum(numberrose1++)}, 2000);
+      myTimeout = setInterval(function (){  rose1(data.data[numberrose1].name,data.data[numberrose1].positionX,data.data[numberrose1].positinY,data.data[numberrose1].positinZ,data.data[numberrose1].rotationX,data.data[numberrose1].rotationY,data.data[numberrose1].rotationZ,data.data.length) ;icrenum(numberrose1++)}, 200);
 
 
 
@@ -107,7 +107,7 @@ var tomixerloop=0;
 
      
 //var tomixerloop=0;
-  function rose1(nam,pox,poy,poz,rox,roy,roz) {
+  function rose1(nam,pox,poy,poz,rox,roy,roz,lngthdata) {
     loader.load('models/rose1/' + nam + '.glb', function (gltff) {
     
       gltff.scene.children[0].traverse(function (child) {
