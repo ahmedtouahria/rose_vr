@@ -86,8 +86,11 @@ var tomixerloop=0;
             child.rotation.z= roz
             child.rotation.x= rox
             child.rotation.y= roy
+
+     
+
             scene.add(child);
-            if(numberrose1==lngthdata-1){
+            if(numberrose1>=lngthdata-1){
               clearInterval(myTimeout)
             }
         
@@ -105,20 +108,32 @@ var tomixerloop=0;
     }, (error) => {
     });
   }
+
+ 
+
+
+
+
+
+
   sndan()
   function sndan() {
-    loader.load('models/sndan1.glb', function (gltffsnd) {
+    loader.load('models/sndan3.glb', function (gltffsnd) {
       //face1.glb
       gltffsnd.scene.children[0].traverse(function (childsndan) {
         if (childsndan.isMesh) {
-          childsndan.material.metalness = 0.9;
+          childsndan.material.metalness = 0.1;
           childsndan.material.roughness = 0.02;
-          childsndan.material.exposure = 0.1;
+          childsndan.material.exposure = 0.9;
           childsndan.receiveShadow = true;
           childsndan.castShadow = true;
-          //  childsndan.material.flatShading = true;
+           childsndan.material.flatShading = false;
           childsndan.material.transparent = true;
           childsndan.material.opacity = 0.5;
+     
+
+   
+      
           scene.add(childsndan);
 
         }
@@ -151,6 +166,8 @@ var tomixerloop=0;
 
   window.addEventListener("resize", onWindowResize, false);
 
+
+  
  const pmremGenerator = new THREE.PMREMGenerator(renderer);
  pmremGenerator.compileEquirectangularShader();
  new RGBELoader()
