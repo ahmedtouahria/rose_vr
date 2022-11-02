@@ -2,10 +2,10 @@ import * as THREE from "./three.module.js";
 import { OrbitControls } from "./OrbitControls.js";
 import { GLTFLoader } from "./GLTFLoader.js";
 import { RGBELoader } from './RGBELoader.js';
-import { RoughnessMipmapper } from './RoughnessMipmapper.js';
+
 var container;
 
-var camera, scene, renderer, renderer1, controls;
+var camera, scene, renderer
 
 
 var numberrose1=0
@@ -35,22 +35,8 @@ var loader = new GLTFLoader();
     0,
    600
   );
-  // lights
-  var light, materials;
-  scene.add(new THREE.AmbientLight(0x666666));
-  light = new THREE.DirectionalLight(0xdfebff, 0.1);
-  light.position.set(50, 200, 100);
-  light.position.multiplyScalar(1.3);
-  light.castShadow = true;
-  light.shadow.mapSize.width = 1024;
-  light.shadow.mapSize.height = 1024;
-  var d = 300;
-  light.shadow.camera.left = -d;
-  light.shadow.camera.right = d;
-  light.shadow.camera.top = d;
-  light.shadow.camera.bottom = -d;
-  light.shadow.camera.far = 1000;
-  scene.add(light);			
+  
+ 		
   fetch('./vases.json').then(function (response) {
     return response.json();
   }).then(function (data) {
@@ -62,12 +48,7 @@ var loader = new GLTFLoader();
     // }
   
     function icrenum(num){
-      
-     
-
-     if(num>=data.data.length){
-      
-     } 
+ 
     
     
      }
@@ -76,19 +57,6 @@ var loader = new GLTFLoader();
 
 
 
-
-
-
-
-
-
-
-
-
-    // for (let numberrose1 = 0; numberrose1 < data.data.length; numberrose1++) {
-    //   rose1(data.data[numberrose1].name,data.data[numberrose1].positionX,data.data[numberrose1].positinY,data.data[numberrose1].positinZ,data.data[numberrose1].rotationX,data.data[numberrose1].rotationY,data.data[numberrose1].rotationZ);
-
-    // }
 
   }).catch(function (err) {
     console.warn('Something went wrong.', err);
@@ -119,13 +87,13 @@ var tomixerloop=0;
             child.rotation.x= rox
             child.rotation.y= roy
             scene.add(child);
-            if(numberrose1==lngthdata){
+            if(numberrose1==lngthdata-1){
               clearInterval(myTimeout)
             }
         
        
 
-console.log(numberrose1)
+
 
 
      
@@ -161,39 +129,6 @@ console.log(numberrose1)
   }
 
 
-  function water() {
-    loader.load('models/water.glb', function (gltffsnd) {
-
-
-      //face1.glb
-      
-      gltffsnd.scene.children[0].traverse(function (childsndan) {
-        if (childsndan.isMesh) {
-          childsndan.material.metalness = 0.9;
-          childsndan.material.roughness = 0.02;
-          childsndan.material.exposure = 0.1;
-          childsndan.receiveShadow = true;
-          childsndan.castShadow = true;
-          //  childsndan.material.flatShading = true;
-          childsndan.material.transparent = true;
-          childsndan.material.opacity = 0.5;
-          scene.add(childsndan);
-
-
-        }
-
-      });
-
-
-    }, (xhr) => {
-      
-    }, (error) => {
-      
-    });
-
-
-  }
-
 
 
 
@@ -202,9 +137,7 @@ console.log(numberrose1)
 
   renderer.setPixelRatio(window.devicePixelRatio);
   renderer.setSize(window.innerWidth, window.innerHeight);
-  renderer.domElement.style.position = "absolute";
-  renderer.domElement.style.top = 0;
-  renderer.domElement.style.zIndex = "1";
+
 
   container.appendChild(renderer.domElement);
 
@@ -236,7 +169,7 @@ console.log(numberrose1)
      render();
    });
 
- const roughnessMipmapper = new RoughnessMipmapper(renderer);
+
 
 
 
