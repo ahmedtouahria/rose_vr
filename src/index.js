@@ -76,11 +76,13 @@ var tomixerloop=0;
      
 //var tomixerloop=0;
   function rose1(nam,pox,poy,poz,rox,roy,roz,lngthdata) {
-    loader.load('models/rose1/' + nam + '.glb', function (gltff) {
+    loader.load('models/' + nam + '.glb', function (gltff) {
     
       gltff.scene.children[0].traverse(function (child) {
         if (child.isMesh) {
-          child.position.x=pox
+          if(child.name=="base"){
+
+            child.position.x=pox
             child.position.y=poy 
             child.position.z=poz
             child.rotation.z= roz
@@ -90,6 +92,8 @@ var tomixerloop=0;
      
 
             scene.add(child);
+          }
+        
             if(numberrose1>=lngthdata-1){
               clearInterval(myTimeout)
             }
@@ -118,7 +122,7 @@ var tomixerloop=0;
 
   sndan()
   function sndan() {
-    loader.load('models/sndan3.glb', function (gltffsnd) {
+    loader.load('models/sndan1.glb', function (gltffsnd) {
       //face1.glb
       gltffsnd.scene.children[0].traverse(function (childsndan) {
         if (childsndan.isMesh) {
